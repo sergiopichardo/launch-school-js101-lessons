@@ -1,10 +1,11 @@
-/*
-Walk-through: calculator
+// ask the user for the first number
+// ask the user for the second number
+// ask the user for the operation
+// perform the operation
+// display the result of the operation
 
-Our first program in this course will be a command line calculator program that will:
-- Ask the user for two numbers.
-- Ask the user for the type of operation to perform: add, subtract, multiply or divide.
-- Perform the calculation and display the result.
+console.log('Welcome to the Calculator!')
 
-*/
+
+
 
