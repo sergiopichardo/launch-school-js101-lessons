@@ -1,0 +1,23 @@
+{
+  "name": "launch-school-js101-lessons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiopichardo/launch-school-js101-lessons.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergiopichardo/launch-school-js101-lessons/issues"
+  },
+  "homepage": "https://github.com/sergiopichardo/launch-school-js101-lessons#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
