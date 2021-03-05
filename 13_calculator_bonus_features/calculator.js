@@ -6,8 +6,8 @@
 
 const readlineSync = require('readline-sync')
 const { question } = readlineSync;
-const TEXT = require('./calculator_messages.json')
-const { messages, questions, errors } = TEXT
+const config = require('./calculator_messages.json')
+const { messages, questions, errors } = config.language.english
 
 function prompt(message) {
   console.log(`=> ${message}`);
