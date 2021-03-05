@@ -1,19 +1,42 @@
 {
-  "messages" : {
-    "welcome": "Welcome to the Calculator!",
-    "bye": "Goodbye!",
-    "result": "The result is"
-  },
-  "questions": {
-    "firstNumber": "What is the first number? ",
-    "secondNumber": "What is the second number? ",
-    "operationMessage": "What operation would you like to perform?",
-    "operationNames": "1) Add 2) Subtract 3) Multiply 4) Divide",
-    "operationChoices" : ["1", "2", "3", "4"],
-    "anotherOperation": "Would you like to perform another operation? (y/n)"
-  },
-  "errors": {
-    "invalidNumber": "Hmm... that doesn't look like a valid number.",
-    "invalidChoice": "Must choose 1, 2, 3 or 4"
+  "language" : {
+    "english": {
+      "messages" : {
+        "welcome": "Welcome to the Calculator!",
+        "bye": "Goodbye! Thanks for using the Calculator",
+        "result": "The result is"
+      },
+      "questions": {
+        "firstNumber": "What is the first number? ",
+        "secondNumber": "What is the second number? ",
+        "operationMessage": "What operation would you like to perform?",
+        "operationNames": "1) Add 2) Subtract 3) Multiply 4) Divide",
+        "operationChoices" : ["1", "2", "3", "4"],
+        "anotherOperation": "Would you like to perform another operation? (y/n)"
+      },
+      "errors": {
+        "invalidNumber": "Hmm... that doesn't look like a valid number.",
+        "invalidChoice": "Must choose 1, 2, 3 or 4"
+      }
+    },
+    "spanish": {
+      "messages" : {
+        "welcome": "Bienvenido a la calculadora!",
+        "bye": "Adios! Gracias por usar la calculadora",
+        "result": "El resultado es"
+      },
+      "questions": {
+        "firstNumber": "Cual es el primer numero? ",
+        "secondNumber": "Cual es el segundo numero? ",
+        "operationMessage": "Que operacion quieres ejecutar?",
+        "operationNames": "1) Sumar 2) Restar 3) Multiplicar 4) Dividir",
+        "operationChoices" : ["1", "2", "3", "4"],
+        "anotherOperation": "Quieres ejecutar otra operacion? (y/n)"
+      },
+      "errors": {
+        "invalidNumber": "Hmm... eso no parece un numero valido.",
+        "invalidChoice": "Debes escoger 1, 2, 3 o 4"
+      }
+    }
   }
 }

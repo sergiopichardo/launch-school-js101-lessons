@@ -6,8 +6,8 @@
 
 const readlineSync = require('readline-sync')
 const { question } = readlineSync;
-
-
+const TEXT = require('./calculator_messages.json')
+const { messages, questions, errors } = TEXT
 
 function prompt(message) {
   console.log(`=> ${message}`);
@@ -17,68 +17,58 @@ function invalidNumber(number) {
   return number.trimStart() === '' || Number.isNaN(Number(number));
 }
 
-prompt('Welcome to the Calculator!');
+prompt(messages.welcome);
 
 while (true) {
   // ask for two numbers
-  prompt('What is the first number?');
+  prompt(questions.firstNumber);
   let number1 = question()
 
   while(invalidNumber(number1)) {
-    prompt(`Hmm... that doesn't look like a valid number.`)
+    prompt(errors.invalidNumber)
     number1 = question();
   }
 
   // ask for operation
-  console.log('What is the second number?')
+  console.log(questions.secondNumber)
   let number2 = question()
 
   while(invalidNumber(number2)) {
-    prompt(`Hmm... that doesn't look like a valid number.`)
+    prompt(errors.invalidNumber)
     number2 = question();
   }
 
   // perform operation and display results
-  console.log(`What operation would you like to perform?\n1) Add 2) Subtract 3) Multiply 4) Divide`);
+  console.log(questions.operationMessage);
+  console.log(questions.operationNames);
   let operation = question()
 
-  while(!['1', '2', '3', '4'].includes(operation)) {
-    prompt('Must choose 1, 2, 3 or 4')
+  while(!questions.operationChoices.includes(operation)) {
+    prompt(errors.invalidChoice)
     operation = question()
   }
-
   let output;
-  if (operation === '1') {
-    output = Number(number1) + Number(number2);
-  } else if (operation === '2') {
-    output = Number(number1) - Number(number2);
-  } else if (operation === '3') {
-    output = Number(number1) * Number(number2);
-  } else if (operation === '4') {
-    output = Number(number1) / Number(number2);
-  }
-
   switch(operation) {
-    case '1':
+    case questions.operationChoices[0]:
       output = Number(number1) + Number(number2);
       break;
-    case '2':
+    case questions.operationChoices[1]:
       output = Number(number1) - Number(number2);
       break;
-    case '3':
+    case questions.operationChoices[2]:
       output = Number(number1) * Number(number2);
       break;
-    case '4':
+    case questions.operationChoices[3]:
       output = Number(number1) / Number(number2);
       break;
   }
-  console.log(`The result is ${output}.\n`)
+  console.log(`${messages.result} ${output}.\n`)
 
-  prompt('Would you like to perform another operation? (y/n)')
+  prompt(questions.anotherOperation)
   let answer = question()
+  console.clear()
   if (answer[0].toLowerCase() !== 'y') {
-    console.log('Goodbye!')
+    console.log(messages.bye)
     break;
   }
-
 }
