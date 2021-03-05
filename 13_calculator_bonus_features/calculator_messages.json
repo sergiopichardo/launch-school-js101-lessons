@@ -1,0 +1,19 @@
+{
+  "messages" : {
+    "welcome": "Welcome to the Calculator!",
+    "bye": "Goodbye!",
+    "result": "The result is"
+  },
+  "questions": {
+    "firstNumber": "What is the first number? ",
+    "secondNumber": "What is the second number? ",
+    "operationMessage": "What operation would you like to perform?",
+    "operationNames": "1) Add 2) Subtract 3) Multiply 4) Divide",
+    "operationChoices" : ["1", "2", "3", "4"],
+    "anotherOperation": "Would you like to perform another operation? (y/n)"
+  },
+  "errors": {
+    "invalidNumber": "Hmm... that doesn't look like a valid number.",
+    "invalidChoice": "Must choose 1, 2, 3 or 4"
+  }
+}
