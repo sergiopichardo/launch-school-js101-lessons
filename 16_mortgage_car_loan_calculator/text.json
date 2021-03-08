@@ -1,0 +1,27 @@
+{
+  "titles": {
+    "amount": "******* Mortgage Amount *******",
+    "duration": "******* Mortgage Duration *******",
+    "apr": "******* Mortgage APR *******"
+  },
+  "options" : {
+    "again": ["y", "yes", "n", "no"]
+  },
+  "messages" : {
+    "welcome": "Welcome to 'Mortgage Calculator'!",
+    "bye": "Thank you for using 'Mortgage Calculator'!",
+    "again": "Would you like to make a new calculation? (y/n) ",
+    "amount": [
+      "Enter the mortgage amount in dollars",
+      "e.g. 160,000.00"
+    ],
+    "duration": [
+      "Please enter the mortgage duration in years.",
+      "e.g. Enter 30 to represent 30 years"
+    ],
+    "apr": [
+      "Please enter the Annual Percentage Rate",
+      "(e.g enter 4 to indicate 4%)"
+    ]
+  }
+}

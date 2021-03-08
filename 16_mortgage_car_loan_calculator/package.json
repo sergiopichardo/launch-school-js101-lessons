@@ -1,0 +1,24 @@
+{
+  "name": "16_mortgage_car_loan_calculator",
+  "version": "1.0.0",
+  "description": "## 1. Problem Create a program to calculate the monthly mortage payments a user has to make using the **principal** (the amount of money), the **APR** (Annual Percentage Rate), and the **loan duration** (in months).",
+  "main": "mortgageCalculator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "boxen": "^5.0.0",
+    "chalk": "^4.1.0",
+    "currency.js": "^2.0.3",
+    "readline-sync": "^1.4.10",
+    "table": "^6.0.7"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.21.0",
+    "eslint-cli": "^1.1.1"
+  }
+}
