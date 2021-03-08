@@ -5,7 +5,7 @@
 // display the result of the operation
 
 const readlineSync = require('readline-sync')
-const { question } = readlineSync;
+const { question, questionInt, questionFloat } = readlineSync;
 const config = require('./calculator_messages.json')
 const { messages, questions, errors } = config.language.english
 
