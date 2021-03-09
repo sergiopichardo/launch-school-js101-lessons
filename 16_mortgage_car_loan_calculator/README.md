@@ -207,4 +207,10 @@ Display the `monthly loan payment` to the console
 - divide code into small functions
 - implement functions in `mortgageCalculator`
 
-
+## TODOS
+Current problem with the program
+- [] The program allows for empty input for the `loanAmount`, `duration` and `apr`.
+- [] The program allows for `negative inputs`
+- [] `isInvalid()` function does not work as intended
+    - `typeof data === 'undefined' and data > 0` does not make any sense
+- [] change the name of the parameter `variable` on line `103` (e.g. dataType or inputType)
